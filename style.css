@@ -1,0 +1,54 @@
+*  {
+    font-family: sans-serif;
+}
+
+.fond {
+    position: relative;
+    background-position: top;
+    background-image: url(wallhaven-858lz1.png);
+    background-repeat: no-repeat;
+    height: calc(100vh - 61px);
+    overflow: scroll;
+}
+.header {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.507);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    padding: 20px;
+}
+
+.list a {
+    text-decoration: none;
+    font-size: large;
+    font-family: sans-serif;
+    color: black;
+    padding: 20px;
+    padding-bottom: 21px;
+    background-color: white;
+}
+
+.list a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.blogslist {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 1222px;
+}
+
+.blogslist div {
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
