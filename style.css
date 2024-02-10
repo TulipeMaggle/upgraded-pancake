@@ -1,16 +1,27 @@
 *  {
     font-family: sans-serif;
+    scrollbar-width: none;
 }
 
 body{
     margin: 0;
 }
 
+.sidebar {
+    position: relative;
+    left: 83vw;
+    bottom: 60vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.616), rgba(255, 255, 255, 0));
+    width: 15%;
+    height: 70vh;
+    display: none;
+}
+
 .fond {
     background-image: url(wallhaven-858lz1.png);
     object-fit: cover;
     padding-top: 20px;
-    height: 100vh;
+    height: 98vh;
 }
 
 .header {
@@ -61,4 +72,16 @@ body{
 
 .clicked{
     background-color: blueviolet;
+}
+
+.clickonsidebar {
+    display: block;
+}
+
+#sidebar {
+    position: relative;
+    bottom: 60vh;
+    left: 82vw;
+    width: 200px;
+    font-size: 20px;
 }
