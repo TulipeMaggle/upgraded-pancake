@@ -8,13 +8,16 @@ body{
 }
 
 .sidebar {
+    opacity: 0;
     position: relative;
     left: 83vw;
     bottom: 60vh;
     background: linear-gradient(rgba(255, 255, 255, 0.616), rgba(255, 255, 255, 0));
     width: 15%;
     height: 70vh;
-    display: none;
+    transition-property: all 20s, 10s;
+    transition-property: all;
+    transition-duration: 0.8s;
 }
 
 .fond {
@@ -45,20 +48,27 @@ body{
 .header a:hover {
     background-color: black;
     color: white;
+    transition-property: all;
+    transition-duration: 0.8s;
 }
 
 .main{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    transition-property: all;
+    transition-duration: 0.8s;
 
 }
 
+.main:hover {
+    transition-property: all;
+    transition-duration: 0.8s;
+}
 
 .blogslist {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 1222px;
     overflow-y: scroll;
     height: 550px;
@@ -71,17 +81,40 @@ body{
 }
 
 .clicked{
-    background-color: blueviolet;
+    background: linear-gradient(
+    to right,
+    blueviolet 30%,
+    orange ,
+    black 75% 80%,
+    green ,
+    white 
+  );
+    justify-content: left;
+    animation-name: glissement;
+    animation-duration: 2s;
 }
 
+@keyframes glissement {
+    from {
+        margin-left: 20%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+  
+
 .clickonsidebar {
-    display: block;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 0.8s;
 }
 
 #sidebar {
     position: relative;
     bottom: 60vh;
     left: 82vw;
-    width: 200px;
+    width: 10%;
     font-size: 20px;
 }
