@@ -12,9 +12,11 @@ var toggled = false;
 
 bouton.addEventListener("click", () => {
   if (!toggled) {
+    main.classList.remove("clicked2");
     main.classList.add("clicked");
     console.log(toggled);
   } else {
+    main.classList.add("clicked2");
     main.classList.remove("clicked");
   }
   toggled = !toggled;

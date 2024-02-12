@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+    background-color: #333;
+    font-family: sans-serif;
+    color: white;
+    box-sizing: content-box;
+
+}
+
+.main{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boite{
+    background-color: #505050;
+    width: 70vw;
+    height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    gap: 16px;
+    box-shadow: 0px 4px 1em #000000;    
+    overflow: hidden;
+}
+
+.header{
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    background-color: #1f1f1f;
+    padding: 2rem;
+    font-size: 19px;
+}
+
+.header a:active{
+    background-color: red;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
