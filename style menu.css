@@ -56,14 +56,14 @@ body{
     gap: 16px;
 }
 
-#text2 {
+.text2{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
 .cachertexte{
-    visibility: hidden;
+    display: none;
 }
 
 

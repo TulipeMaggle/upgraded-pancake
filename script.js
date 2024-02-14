@@ -5,12 +5,6 @@ const docsidebar = document.querySelector(".sidebar")
 const bouton = document.querySelector("#bouton");
 
 const sidebarbutton = document.querySelector("#sidebar")
-
-const buttonswipe = document.querySelector("#button-swipe")
-
-const text2 = document.querySelector("#text2")
-const text = document.querySelector(".text")
-
 console.log(sidebarbutton);
 
 var toggled = false;
@@ -39,12 +33,5 @@ sidebarbutton.addEventListener("click", function affichersidebar() {
     docsidebar.classList.add("clickonsidebar")
     sidebar = 1
   }
-})
-
-buttonswipe.addEventListener("click", function affichersidebar() {
-console.log();
-
-    text2.id.remove("cachertexte")
-  
 })
 
