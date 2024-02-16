@@ -1,123 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Menu burger</title>
-  </head>
-  <style>
+</head>
+<style>
     .nav-item {
-      list-style: none;
-      padding: 1rem;
+        list-style: none;
+        padding: 1rem;
     }
 
-    .nav-item > a {
-      text-decoration: none;
+    .nav-item>a {
+        text-decoration: none;
     }
 
     .nav-list {
-      display: flex;
+        display: flex;
     }
 
     .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background-color: rgb(238, 235, 231);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(238, 235, 231);
     }
 
     span {
-      display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
 
-      background: black;
-      border-radius: 3px;
+        background: black;
+        border-radius: 3px;
     }
 
     #toggleMenu {
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      opacity: 0;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        z-index: 4;
+        opacity: 0;
     }
 
     .nav-list-burger {
-      position: relative;
-      left: -300px;
-      display: none;
+        position: relative;
+        left: -300px;
+        display: none;
     }
 
     .burger {
-      position: fixed;
-      left: 20px;
+        position: fixed;
+        left: 20px;
     }
 
     @media screen and (min-width: 550px) {
-      .burger {
-        display: none;
-      }
+        .burger {
+            display: none;
+        }
 
-      .nav-list {
-        position: relative;
-        transform: translateX(0px);
-        transition: all 0.5s ease-out;
-      }
+        .nav-list {
+            position: relative;
+            transform: translateX(0px);
+            transition: all 0.5s ease-out;
+        }
     }
 
     @media screen and (max-width: 550px) {
-      .nav-list {
-        position: relative;
-        transform: translateX(-550px);
-        transition: all 0.2s ease-out;
-      }
-      .titre {
-        position: fixed;
-      }
+        .nav-list {
+            position: relative;
+            transform: translateX(-550px);
+            transition: all 0.2s ease-out;
+        }
+
+        .titre {
+            position: fixed;
+        }
     }
 
     .active-menu {
-      position: absolute;
-      left: 0;
-      top: 30px;
-      background-color: rgb(238, 235, 231);
-      display: block;
+        position: absolute;
+        left: 0;
+        top: 30px;
+        background-color: rgb(238, 235, 231);
+        display: block;
     }
 
+    .carte {
+        position: absolute;
+        left: 650px;
+        top: 400px;
+        width: 150px;
+        height: 200px;
+        background-color: #3c3c3c;
+        transition: all 1s ease;
+    }
 
-  </style>
-  <body>
+    .cartes div:nth-child(2n){
+        background-color: red;
+    }
+    .cartes div:nth-child(1):hover{
+        transform: rotate(10deg);
+        left: 720px;
+    }
+    .cartes div:nth-child(2):hover{
+        transform: rotate(-30deg);
+        left: 680px;
+    }
+    .cartes div:nth-child(3):hover{
+        transform: rotate(30deg);
+        left: 820px;
+    }
+    .cartes div:nth-child(4):hover{
+        transform: rotate(-40deg);
+        left: 420px;
+    }
+
+</style>
+
+<body>
     <nav class="header">
-      <div class="burger">
-        <input
-          type="checkbox"
-          name=""
-          id="toggleMenu"
-          -
-          onclick="toggleMenu()"
-        />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul class="nav-list-burger">
-          <li class="nav-list-item">page</li>
-          <li class="nav-list-item">page</li>
-        </ul>
-      </div>
+        <div class="burger">
+            <input type="checkbox" name="" id="toggleMenu" - onclick="toggleMenu()" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="nav-list-burger">
+                <li class="nav-list-item">page</li>
+                <li class="nav-list-item">page</li>
+            </ul>
+        </div>
 
-      <h1 class="titre">Logo</h1>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="">page</a></li>
-        <li class="nav-item"><a href="">page</a></li>
-        <li class="nav-item"><a href="">page</a></li>
-        <li class="nav-item"><a href="">page</a></li>
-        <li class="nav-item"><a href="">page</a></li>
-        <li class="nav-item"><a href="">page</a></li>
-        <li class="nav-item"><a href="">page</a></li>
-      </ul>
+        <h1 class="titre">Logo</h1>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="">page</a></li>
+            <li class="nav-item"><a href="">page</a></li>
+            <li class="nav-item"><a href="">page</a></li>
+            <li class="nav-item"><a href="">page</a></li>
+            <li class="nav-item"><a href="">page</a></li>
+            <li class="nav-item"><a href="">page</a></li>
+            <li class="nav-item"><a href="">page</a></li>
+        </ul>
     </nav>
 
+    <div class="cartes">
+        <div class="carte"></div>
+        <div class="carte"></div>
+        <div class="carte"></div>
+        <div class="carte"></div>
+    </div>
+
     <script src="menuBurger.js"></script>
-  </body>
+</body>
+
 </html>
