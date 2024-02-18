@@ -1,203 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Presentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
 
-  <style>
-    * {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      font-size: 12px;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <title>Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-    .header {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 0.5dvw;
-      padding-top: 0.5dvw;
-    }
+<style>
+  * {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
 
-    .titre {
-      padding-left: 1dvw;
-      font-size: 3em;
-    }
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5dvw;
+    padding-top: 0.5dvw;
+  }
 
-    .contacts {
-      display: flex;
-      flex-direction: row;
-    }
+  .titre {
+    padding-left: 1dvw;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+  }
 
-    .mail {
-      clip-path: circle(4dvh);
-      background-color: gray;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 8dvh;
-    }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .mail img {
-      display: block;
-      height: 5dvh;
-      width: 8dvh;
-      object-fit: contain;
-    }
+  .mail {
+    clip-path: circle(4dvh);
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8dvh;
+  }
 
-    .instagram {
-      clip-path: circle(4dvh);
-      background-color: gray;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 8dvh;
-    }
+  .mail img {
+    display: block;
+    height: 5dvh;
+    width: 8dvh;
+    object-fit: contain;
+  }
 
-    .instagram img {
-      display: block;
-      height: 5dvh;
-      width: 8dvh;
-      object-fit: contain;
-    }
+  .instagram {
+    clip-path: circle(4dvh);
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8dvh;
+  }
 
-    .lien {
-      clip-path: circle(4dvh);
-      background-color: gray;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 8dvh;
-    }
+  .instagram img {
+    display: block;
+    height: 5dvh;
+    width: 8dvh;
+    object-fit: contain;
+  }
 
-    .lien img {
-      display: block;
-      height: 5dvh;
-      width: 8dvh;
-      object-fit: contain;
-    }
+  .lien {
+    clip-path: circle(4dvh);
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8dvh;
+  }
 
-    .conteneur {
-      background-color: rgba(228, 163, 163, 0.425);
-      width: 100%;
-    }
+  .lien img {
+    display: block;
+    height: 5dvh;
+    width: 8dvh;
+    object-fit: contain;
+  }
 
-    .haut {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 10dvh;
-    }
+  .conteneur {
+    background-color: rgba(228, 163, 163, 0.425);
+    width: 100%;
+  }
 
-    .entete {
-      font-size: 3em;
-      border-bottom: 3px solid black;
-      padding-top: 4dvh;
-    }
+  .haut {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10dvh;
+  }
 
-    .bas {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 10dvh;
-    }
+  .entete {
+    font-size: 3em;
+    border-bottom: 3px solid black;
+    padding-top: 4dvh;
+  }
 
-    .main {
-      width: 95dvw;
-      background-color: aqua;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1dvw;
-      justify-content: center;
-      padding-top: 10px;
-      padding-left: 10px;
-    }
+  .bas {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10dvh;
+  }
 
-    .carte {
-      width: 10dvh;
-      height: 15dvh;
-      background-color: gray;
-    }
-  </style>
+  .main {
+    width: 95dvw;
+    background-color: aqua;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1dvw;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
 
-  <body>
-    <nav class="header">
+  .carte {
+    width: 10dvh;
+    height: 15dvh;
+    background-color: gray;
+  }
+</style>
+
+<body>
+  <nav class="header">
+    <a href="accueil.html" class="titre">
       <h1 class="titre">Logo</h1>
-      <div class="contacts">
-        <div class="mail"><img src="Image/mail.png" alt="e" /></div>
-        <div class="instagram"><img src="Image/mail.png" alt="e" /></div>
-        <div class="lien"><img src="Image/mail.png" alt="e" /></div>
-      </div>
-    </nav>
-    <div class="conteneur">
-      <div class="haut">
-        <div class="entete">Titre</div>
-      </div>
-      <div class="bas">
-        <div class="gauche">123</div>
-        <div class="droite">321</div>
-      </div>
+    </a>
+    <div class="contacts">
+      <div class="mail"><img src="Image/mail.png" alt="e" /></div>
+      <div class="instagram"><img src="Image/mail.png" alt="e" /></div>
+      <div class="lien"><img src="Image/mail.png" alt="e" /></div>
     </div>
+  </nav>
+  <div class="conteneur">
+    <div class="haut">
+      <div class="entete">Titre</div>
+    </div>
+    <div class="bas">
+      <div class="gauche">123</div>
+      <div class="droite">321</div>
+    </div>
+  </div>
 
-    <div class="main">
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-      <div class="carte"></div>
-    </div>
-  </body>
+  <div class="main">
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="carte"></div>
+  </div>
+</body>
+
 </html>

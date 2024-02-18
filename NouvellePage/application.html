@@ -80,6 +80,11 @@
         }
     }
 
+    .titre{
+        text-decoration: none;
+        color: black;
+    }
+
     .active-menu {
         position: absolute;
         left: 0;
@@ -88,34 +93,117 @@
         display: block;
     }
 
-    .carte {
-        position: absolute;
-        left: 650px;
-        top: 400px;
-        width: 150px;
-        height: 200px;
-        background-color: #3c3c3c;
-        transition: all 1s ease;
+    .carte-groupe {
+        cursor: pointer;
     }
 
-    .cartes div:nth-child(2n){
-        background-color: red;
+    /* design grosses cartes */
+    .grosse-carte {
+        width: 150px;
+        position: absolute;
+        top: 40dvh;
+        height: 200px;
+        background-color: rgba(39, 15, 255, 0.774);
+        border-radius: 20px;
+        transition: all 1s cubic-bezier(.09, .83, .26, .88);
+        z-index: 3;
     }
-    .cartes div:nth-child(1):hover{
-        transform: rotate(10deg);
-        left: 720px;
+
+    /* design petites cartes */
+    .petite-carte {
+        width: 100px;
+        position: absolute;
+        top: 42dvh;
+        height: 150px;
+        background-color: rgba(39, 15, 255, 0.774);
+        border-radius: 20px;
+        transition: all 1s cubic-bezier(.09, .83, .26, .88);
     }
-    .cartes div:nth-child(2):hover{
-        transform: rotate(-30deg);
-        left: 680px;
+
+    .image {
+        border-radius: 20px;
     }
-    .cartes div:nth-child(3):hover{
-        transform: rotate(30deg);
-        left: 820px;
+
+    /* grosses cartes */
+    .carte:nth-child(1) {
+        transform: translate(-1%) rotate(-5deg);
     }
-    .cartes div:nth-child(4):hover{
-        transform: rotate(-40deg);
-        left: 420px;
+
+    .carte:nth-child(2) {
+        transform: translate(-3%) rotate(-0deg);
+    }
+
+    .carte:nth-child(3) {
+        transform: translateX(0%) rotate(5deg);
+    }
+
+    .carte:nth-child(4) {
+        transform: translate(0%) rotate(10deg);
+    }
+
+    /* petites cartes */
+    .carte:nth-child(5) {
+        transform: translate(-1%) rotate(-5deg);
+    }
+
+    .carte:nth-child(6) {
+        transform: translate(-3%) rotate(-0deg);
+    }
+
+    .carte:nth-child(7) {
+        transform: translateX(0%) rotate(5deg);
+    }
+
+    .carte:nth-child(8) {
+        transform: translate(0%) rotate(10deg);
+    }
+
+    /* hover grosses cartes */
+    .carte-groupe:hover>.carte:nth-child(1) {
+        transform: translate(-100%, 20%) rotate(-40deg);
+    }
+
+    .carte-groupe:hover>.carte:nth-child(2) {
+        transform: translate(-50%) rotate(-20deg);
+    }
+
+    .carte-groupe:hover>.carte:nth-child(3) {
+        transform: translate(50%) rotate(20deg);
+    }
+
+    .carte-groupe:hover>.carte:nth-child(4) {
+        transform: translate(100%, 20%) rotate(40deg);
+    }
+
+    /*hover petites cartes */
+    .carte-groupe:hover>.carte:nth-child(5) {
+        transform: translate(-150%, -110%) rotate(-40deg);
+    }
+
+    .carte-groupe:hover>.carte:nth-child(6) {
+        transform: translate(-50%, 120%) rotate(50deg);
+    }
+
+    .carte-groupe:hover>.carte:nth-child(7) {
+        transform: translate(150%, -120%) rotate(20deg);
+    }
+
+    .carte-groupe:hover>.carte:nth-child(8) {
+        transform: translate(150%, 140%) rotate(-40deg);
+    }
+
+    /* boutons */
+    .boutons{
+        position: absolute;
+        top: 75dvh;
+        left: 52dvw;
+
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        position: relative;
     }
 
 </style>
@@ -133,7 +221,7 @@
             </ul>
         </div>
 
-        <h1 class="titre">Logo</h1>
+        <a href="accueil.html" class="titre"><h1 class="titre">Logo</h1></a>
         <ul class="nav-list">
             <li class="nav-item"><a href="">page</a></li>
             <li class="nav-item"><a href="">page</a></li>
@@ -144,14 +232,27 @@
             <li class="nav-item"><a href="">page</a></li>
         </ul>
     </nav>
+    <div class="main">
+        <div class="carte-groupe">
+            <div class="carte grosse-carte"><a href="https://www.google.com/search?q=league+of+legends"><img
+                        class="image" src="Image/lol 150x200.jpg" sizes="150x200"></a></div>
+            <div class="carte grosse-carte"><a href="https://www.google.com/search?q=stardew+valley"><img class="image"
+                        src="Image/stardew-valley150x200.jpg" sizes="150x200"></a></div>
+            <div class="carte grosse-carte"><a href="https://www.google.com/search?q=destiny+2"><img class="image"
+                        src="Image/destiny2 150x200jpg.jpg" sizes="150x200"></a></div>
+            <div class="carte grosse-carte"><a href="https://www.google.com/search?q=wii+sports"><img class="image"
+                        src="Image/wiisport 150x200.jpg" sizes="150x200"></a></div>
+            <div class="carte petite-carte"></div>
+            <div class="carte petite-carte"></div>
+            <div class="carte petite-carte"></div>
+            <div class="carte petite-carte"></div>
+        </div>
 
-    <div class="cartes">
-        <div class="carte"></div>
-        <div class="carte"></div>
-        <div class="carte"></div>
-        <div class="carte"></div>
+        <div class="boutons">
+            <input class="bouton" type="button" value="non">
+            <input class="bouton" type="button" value="oui">
+        </div>
     </div>
-
     <script src="menuBurger.js"></script>
 </body>
 
