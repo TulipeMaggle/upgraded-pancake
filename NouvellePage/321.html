@@ -49,39 +49,52 @@
         transition: transform 0.3s;
     }
 
-    .background{
-        
-        border-top-left-radius: 10px; 
+    .background {
+
+        border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
 
-    .contentimg{
+    .contentimg {
         max-height: 200px;
         overflow: hidden;
         transition: max-height 0.3s;
     }
 
 
-    .contenu{
+    .contenu {
         display: flex;
         flex-direction: column;
     }
 
-    .contenuheader{
+    .contenuheader {
         display: flex;
         justify-content: space-between;
     }
 
 
-    .carte:hover{
+    .carte:hover {
         transform: scale(1.2);
-    } 
+    }
 
-    .carte:hover>.contentimg{
+    .carte:hover>.contentimg {
         max-height: 150px;
-        
-    } 
+        opacity: 0.8;
+    }
 
+    .animation {
+        animation: test 1s infinite alternate;
+    }
+
+    @keyframes test {
+        from {
+            font-size: 39px;
+        }
+
+        to {
+            font-size: initial;
+        }
+    }
 </style>
 
 <body>
@@ -97,8 +110,12 @@
                     <div class="titre">Titre</div>
                     <div class="infos">i n f o s </div>
                 </div>
-                <div class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, porro dolorum eligendi sunt ad, dolorem ut officiis iure ipsum, rem neque debitis labore quo numquam expedita eum. Laudantium, incidunt tenetur!</div>
+                <div class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, porro dolorum
+                    eligendi sunt ad, dolorem ut officiis iure ipsum, rem neque debitis labore quo numquam expedita eum.
+                    Laudantium, incidunt tenetur!</div>
             </div>
         </div>
+        <a href="accueil.html"><button>retourAccueil</button></a>
+        <div class="animation">Salut</div>
     </main>
 </body>
