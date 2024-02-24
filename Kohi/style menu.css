@@ -102,7 +102,7 @@ body{
         transform: translateX(-1060px);
     }
     100%{
-        opacity: 0;
+        display: none;
     }
 }
 
