@@ -61,11 +61,6 @@ body{
 
 }
 
-.main:hover {
-    transition-property: all;
-    transition-duration: 0.8s;
-}
-
 .blogslist {
     display: flex;
     flex-direction: column;
@@ -103,6 +98,31 @@ body{
       margin-left: 0%;
     }
   }
+
+.clicked2{
+    background: linear-gradient(
+    to right,
+    blueviolet 30%,
+    orange ,
+    black 75% 80%,
+    green ,
+    white 
+  );
+  justify-content: left;
+    animation-name: glissement2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glissement2 {
+    from {
+        margin-left: 0%;
+    }
+  
+    to {
+      margin-left: 20%;
+    }
+  }
   
 
 .clickonsidebar {
@@ -113,8 +133,14 @@ body{
 
 #sidebar {
     position: relative;
-    bottom: 60vh;
-    left: 82vw;
+    bottom: 60dvh;
+    left: 82dvw;
     width: 10%;
     font-size: 20px;
+}
+
+@media screen and (max-width:500px) {
+    #sidebar{
+        display: none;
+    }
 }

@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-color: #333;
+    font-family: sans-serif;
+    color: white;
+    box-sizing: content-box;
+
+}
+
+.main{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boite{
+    background-color: #505050;
+    width: 70vw;
+    height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 4px 1em #000000;    
+    overflow: hidden;
+}
+
+.header{
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    padding: 2rem;
+    font-size: 19px;
+}
+
+.header a:active{
+    background-color: red;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cachertexte{
+    display: none;
+}
+
+
+#button-swipe{
+    background-color: rgba(31, 31, 31, 0);
+    border: rgba(31, 31, 31, 0);  
+    position: absolute;
+    left: 87dvw;
+    clip-path: ellipse(50% 50%);
+}
+
+#button-swipe:hover{
+    
+    background-color: rgba(139, 139, 139, 0.082);
+    cursor: pointer;
+}
+
+.animationslide{
+    animation: slide 1s forwards;
+}
+
+.animationslide2{
+    animation: slide2 1s forwards;
+}
+
+.limite{
+    overflow: hidden;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }    
+
+    99%{
+        transform: translateX(-1060px);
+    }
+    100%{
+        display: none;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(1070px);
+    }    
+
+    100%{
+        transform: translateX(0px);
+    }
+}

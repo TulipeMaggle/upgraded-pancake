@@ -5,16 +5,17 @@ const docsidebar = document.querySelector(".sidebar")
 const bouton = document.querySelector("#bouton");
 
 const sidebarbutton = document.querySelector("#sidebar")
-
 console.log(sidebarbutton);
 
 var toggled = false;
 
 bouton.addEventListener("click", () => {
   if (!toggled) {
+    main.classList.remove("clicked2");
     main.classList.add("clicked");
     console.log(toggled);
   } else {
+    main.classList.add("clicked2");
     main.classList.remove("clicked");
   }
   toggled = !toggled;
@@ -30,6 +31,7 @@ sidebarbutton.addEventListener("click", function affichersidebar() {
     sidebar = 0
   } else {
     docsidebar.classList.add("clickonsidebar")
-    sidebar = sidebar + 1
+    sidebar = 1
   }
 })
+
