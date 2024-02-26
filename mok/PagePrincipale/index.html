@@ -132,9 +132,24 @@
 
     <script>
         a = {
-            name: 'Julien',
-            Age: 20
+            nom: 'Julien',
+            Agee: 20
         }
+
+        const AAGE = a.nom + "a" + a.Agee
+
+        console.log(`${AAGE}`);
+
+        class Personne {
+            constructor(name, age, country){
+                this.name = name
+                this.age = age
+                this.country = country
+            }
+        }
+
+        let julien = new Personne("Julien", "15ans", "Mayotte");
+        console.log(`Hello, my name is ${julien.name}`);
     </script>
 </body>
 
