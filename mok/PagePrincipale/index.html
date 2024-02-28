@@ -131,25 +131,57 @@
 
 
     <script>
-        a = {
-            nom: 'Julien',
-            Agee: 20
-        }
+        // a = {
+        //     nom: 'Julien',
+        //     Agee: 20
+        // }
 
-        const AAGE = a.nom + "a" + a.Agee
+        // const AAGE = a.nom + " a " + a.Agee
 
-        console.log(`${AAGE}`);
+        // console.log(`${AAGE}`);
 
-        class Personne {
-            constructor(name, age, country){
-                this.name = name
-                this.age = age
-                this.country = country
+        // class Personne {
+        //     constructor(name, age, country) {
+        //         this.name = name
+        //         this.age = age
+        //         this.country = country
+        //     }
+        // }
+
+        // let julien = new Personne("Julien", "15ans", "Mayotte");
+        // console.log(`Hello, my name is ${julien.name}`.toUpperCase());
+
+        // const str = 'The quick brown fox jumps over the lazy dog.';
+
+        // const frequence = {}
+        // const wordslist = str
+        //     .toLowerCase()
+        //     .split(" ")
+        // for (let mot in wordslist) {
+        //     if (frequence[mot]) {
+        //         frequence[mot]++
+        //     } else { frequence = 1 }
+
+        // }
+
+        // console.log(wordslist);
+
+        class Rectangle {
+            constructor(longeur, hauteur) {
+                this.longeur = longeur
+                this.hauteur = hauteur
+            }
+            get perimetre() {
+                let result = this.longeur * 2 + this.hauteur * 2
+                if (result > 0 && result !== NaN) {
+                    return result
+                } else {
+                    console.log("Erreur");
+                }
             }
         }
-
-        let julien = new Personne("Julien", "15ans", "Mayotte");
-        console.log(`Hello, my name is ${julien.name}`);
+        let exemple = new Rectangle(20, 20);
+        console.log(exemple.perimetre);
     </script>
 </body>
 

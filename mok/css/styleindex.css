@@ -147,6 +147,7 @@ main {
 
 }
 
+
 .middle .card .card-date::before {
     content: '';
     display: inline-block;
