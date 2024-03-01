@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../script/scriptindex.js" type="module" defer></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header slide">
         <nav class="logo">Logo</nav>
         <div class="nav-list">
             <a href="#">Accueil</a>
@@ -130,59 +131,6 @@
     </main>
 
 
-    <script>
-        // a = {
-        //     nom: 'Julien',
-        //     Agee: 20
-        // }
-
-        // const AAGE = a.nom + " a " + a.Agee
-
-        // console.log(`${AAGE}`);
-
-        // class Personne {
-        //     constructor(name, age, country) {
-        //         this.name = name
-        //         this.age = age
-        //         this.country = country
-        //     }
-        // }
-
-        // let julien = new Personne("Julien", "15ans", "Mayotte");
-        // console.log(`Hello, my name is ${julien.name}`.toUpperCase());
-
-        // const str = 'The quick brown fox jumps over the lazy dog.';
-
-        // const frequence = {}
-        // const wordslist = str
-        //     .toLowerCase()
-        //     .split(" ")
-        // for (let mot in wordslist) {
-        //     if (frequence[mot]) {
-        //         frequence[mot]++
-        //     } else { frequence = 1 }
-
-        // }
-
-        // console.log(wordslist);
-
-        class Rectangle {
-            constructor(longeur, hauteur) {
-                this.longeur = longeur
-                this.hauteur = hauteur
-            }
-            get perimetre() {
-                let result = this.longeur * 2 + this.hauteur * 2
-                if (result > 0 && result !== NaN) {
-                    return result
-                } else {
-                    console.log("Erreur");
-                }
-            }
-        }
-        let exemple = new Rectangle(20, 20);
-        console.log(exemple.perimetre);
-    </script>
 </body>
 
 </html>
