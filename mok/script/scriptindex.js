@@ -58,29 +58,29 @@ const nav4 = document.querySelector(".nav-list :nth-child(4)")
 
 // callerFun();
 
-function change(temps) {
-    return new Promise((resolve, reject) => {setTimeout(nav1.classList.toggle("ColorInRed"), resolve(), 1000)})
-}
-function change2(temps) {
-    return new Promise((resolve, reject) => {setTimeout(nav2.classList.toggle("ColorInRed"), resolve(), 1000)})
-}
-function change3(temps) {
-    return new Promise((resolve, reject) => {setTimeout(nav3.classList.toggle("ColorInRed"), resolve(), 1000)})
-}
-function change4(temps) {
-    return new Promise((resolve, reject) => {setTimeout(nav4.classList.toggle("ColorInRed"), resolve(), 1000)})
+// function change(temps) {
+//     return new Promise((resolve, reject) => {setTimeout(nav1.classList.toggle("ColorInRed"), resolve(), 1000)})
+// }
+// function change2(temps) {
+//     return new Promise((resolve, reject) => {setTimeout(nav2.classList.toggle("ColorInRed"), resolve(), 1000)})
+// }
+// function change3(temps) {
+//     return new Promise((resolve, reject) => {setTimeout(nav3.classList.toggle("ColorInRed"), resolve(), 1000)})
+// }
+// function change4(temps) {
+//     return new Promise((resolve, reject) => {setTimeout(nav4.classList.toggle("ColorInRed"), resolve(), 1000)})
     
-}
+// }
 
-async function callerFun() {
-    await change();
-    await change2();
-    await change3();
-    await change4();
+// async function callerFun() {
+//     await change();
+//     await change2();
+//     await change3();
+//     await change4();
 
-}
+// }
 
-callerFun();
+// callerFun();
 
 
 
