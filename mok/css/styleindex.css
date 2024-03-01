@@ -13,6 +13,28 @@ html {
     background-color: var(--background);
 }
 
+.fond {
+    position: absolute;
+    height: 100dvh;
+    width: 99dvw;
+    background-color: blue; 
+    z-index: 20;
+    animation: disparition 4s both;
+}
+
+
+@keyframes disparition {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -29,15 +51,16 @@ html {
 .ColorInRed {
     color: red !important
 }
-/* 
+
 @keyframes slideup {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
-} */
+}
 
 .logo {
     font-size: calc(var(--large) + 8px);
@@ -183,7 +206,7 @@ main {
     margin-left: 150px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 1550px) {
     .header {
         flex-direction: column;
         justify-content: center;
@@ -192,5 +215,29 @@ main {
 
     .nav-list a {
         margin-top: 16px;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .side-left .card {
+        width: 200px;
+        height: fit-content;
+        margin: 0px;
+    }
+
+
+    .card {
+        width: 300px;
+    }
+
+    .side-right .card {
+        width: 200px;
+        height: fit-content;
+        margin: 0px;
     }
 }
