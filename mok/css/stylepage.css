@@ -51,6 +51,7 @@ header nav ul {
 
 main {
     background-image: url(../src/img/Page/vide\ mobile.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     height: calc(100dvh - 210px);
     display: flex;
@@ -116,10 +117,20 @@ main {
     main {
         background-image: url(../src/img/Page/vide\ pc.jpg);
         height: calc(100dvh - 130px);
+        background-size: contain;
     }
 
-    .boite{
+    .boite {
         margin: 0 2dvw;
     }
 }
 
+@media only screen and (min-width: 1320px) {
+
+    .boite {
+        font-size: calc(var(--texte) + 8px);
+    }
+    main{
+    background-size: cover;
+    }
+}
