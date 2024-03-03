@@ -1,9 +1,9 @@
 
-const nav = document.querySelector(".nav-list a")
-const nav1 = document.querySelector(".nav-list :nth-child(1)")
-const nav2 = document.querySelector(".nav-list :nth-child(2)")
-const nav3 = document.querySelector(".nav-list :nth-child(3)")
-const nav4 = document.querySelector(".nav-list :nth-child(4)")
+// const nav = document.querySelector(".nav-list a")
+// const nav1 = document.querySelector(".nav-list :nth-child(1)")
+// const nav2 = document.querySelector(".nav-list :nth-child(2)")
+// const nav3 = document.querySelector(".nav-list :nth-child(3)")
+// const nav4 = document.querySelector(".nav-list :nth-child(4)")
 
 // async function change(params) {
 //     await setInterval(() => {
