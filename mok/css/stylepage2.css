@@ -1,10 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-:root{
-    --black-background: rgb(0,0,0);
-    --text-color: rgb(0,0,0);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --black-background: rgb(51, 53, 51);
+    --text-color: rgb(0, 0, 0);
+    --primary: rgb(223, 87, 111);
+    --secondary: rgb(196, 159, 255);
 }
 
 
 body {
     background-color: var(--black-background);
+}
+
+.hautgauche{
+    display: flex;
+    align-items: center;
+}
+
+.p {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 50px;
+    color: white
+}
+
+
+header {
+    background-color: rgb(51, 53, 51);
+    background-color: color-mix(in srgb, var(--secondary) 20%, var(--black-background) 80%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+header li {
+    color: white;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+header li:hover {
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: white 1px solid;
+}
+
+.active {
+    color: var(--primary);
+    font-weight: 600;
+    border-bottom: 1px white solid;
+    transform: translateY(-7px);
+}
+
+input[type=search]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+}
+.loupe{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: rgb(173, 168, 168) 3px solid;
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+}
+.loupe::before{
+    content: '';
+    background: url(../src/img/Icone\ recherche.svg);
+    display: block;
+    height: 40px;
+    width: 40px;
 }
