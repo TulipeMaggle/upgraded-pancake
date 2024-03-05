@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 :root {
     --black-background: rgb(51, 53, 51);
-    --text-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
     --primary: rgb(223, 87, 111);
     --secondary: rgb(196, 159, 255);
 }
@@ -22,7 +22,10 @@ body {
 .p {
     font-family: "Hiragino Kaku Gothic Pro", sans-serif;
     font-size: 50px;
-    color: white
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 
@@ -82,4 +85,43 @@ input[type=search]{
     display: block;
     height: 40px;
     width: 40px;
+}
+
+/** en-dessous du header */
+
+
+.text{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.text span {
+    font-family: monospace;
+    color: white;
+    font-weight: 700;
+    font-size: 46px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    animation: typing 5s infinite steps(58);
+}
+
+.text span:after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 5px;
+    background-color: green;
+    right: 0;
+    top: 0;
+}
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
