@@ -87,7 +87,7 @@ input[type=search]{
     width: 40px;
 }
 
-/** en-dessous du header */
+/* en-dessous du header */
 
 
 .text{
@@ -104,7 +104,7 @@ input[type=search]{
     white-space: nowrap;
     position: relative;
     overflow: hidden;
-    animation: typing 5s infinite steps(58);
+    animation: typing 5s infinite steps(60);
 }
 
 .text span:after{
@@ -113,9 +113,10 @@ input[type=search]{
     display: block;
     height: 100%;
     width: 5px;
-    background-color: green;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     right: 0;
     top: 0;
+    animation: bip 1s infinite;
 }
 @keyframes typing {
     0%{
@@ -123,5 +124,13 @@ input[type=search]{
     }
     100%{
         width: 100%;
+    }
+}
+@keyframes bip {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
