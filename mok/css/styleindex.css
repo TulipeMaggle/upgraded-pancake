@@ -117,7 +117,7 @@ main {
 
 .side-left .card .titre::before {
     content: "";
-    background: url(../src/img/contact-chatting-communication-svgrepo-com.svg);
+    background: url(../src/img/icon\ contact.svg);
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -158,7 +158,7 @@ main {
 
 .middle .card .titre::before {
     content: '';
-    background: url(../src/img/user-alt-1-svgrepo-com.svg);
+    background: url(../src/img/icon\ personne.svg);
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -173,7 +173,7 @@ main {
     height: 40px;
     vertical-align: middle;
     transform: translateY(-3px);
-    background: url(../src/img/mail-svgrepo-com.svg);
+    background: url(../src/img/icon\ mail.svg);
 
 }
 
@@ -184,7 +184,7 @@ main {
     height: 40px;
     vertical-align: middle;
     transform: translateY(-3px);
-    background: url(../src/img/country-direction-location-map-navigation-pin-svgrepo-com.svg);
+    background: url(../src/img/icon\ carte.svg);
 
 }
 
@@ -196,7 +196,7 @@ main {
     height: 40px;
     vertical-align: middle;
     transform: translateY(-3px);
-    background: url(../src/img/calendar-days-svgrepo-com.svg);
+    background: url(../src/img/icon\ calendrier.svg);
 
 }
 
