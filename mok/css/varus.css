@@ -1,0 +1,46 @@
+:root {
+
+    /*couleurs*/
+    --color-body: #424340;
+    --color-primary: #606C5A;
+    --color-primary-light: #7f9276;
+    --color-secondary: #9dad8e;
+    --color-secondary-light: #c7dbb2;
+
+    /*Fonts Size*/
+    --fs-titre: 8vw;
+    --fs-entete: 9vw;
+    --fs-text: 18px;
+
+    /*Font Weight*/
+    --fw-light: 200;
+    --fw-normal: 500;
+    --fw-bold: 700;
+}
+
+body {
+    background-color: var(--color-body);
+    font-size: var(--fs-text);
+}
+
+header {
+    height: 70dvh;
+    background-color: var(--color-body);
+    background-image: url(../src/img/varus/soleil\ grand\ format.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: var(--color-secondary-light) 0px 10px 10px;
+    color: var(--color-secondary-light);
+    text-shadow: #606C5A 5px 5px 2px;
+}
+
+header h1 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-titre);
+}

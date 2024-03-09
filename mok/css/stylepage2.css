@@ -100,7 +100,7 @@ input[type=search] {
     width: fit-content;
 }
 
-.boites {
+.firstdiv {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -206,29 +206,29 @@ input[type=search] {
         }
     }
 
-    .boites {
+    .firstdiv {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 200px);
         gap: 2rem;
     }
 
-    .first-boite {
+    .first .first-boite {
         grid-column: auto;
         grid-row: 2 / 5
     }
 
-    .second-boite {
+    .first .second-boite {
         grid-column: auto;
         grid-row: 1 / 4
     }
 
-    .third-boite {
+    .first .third-boite {
         grid-column: auto;
         grid-row: 3 / 5
     }
 
-    .fourth-boite {
+    .first .fourth-boite {
         grid-column: 4/5;
         grid-row: 1 / 3
     }
