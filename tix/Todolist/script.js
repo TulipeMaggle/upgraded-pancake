@@ -1,42 +1,38 @@
-function createArticle(post) {
-    const article = document.createElement("div")
-    const h1 = document.createElement("h1")
-    h1.innerText = post.title
-    article.append(h1)
-    return article
+const wrapper = document.querySelector(".wrapper");
+try {
+  const response = await fetch(
+    "https://ddragon.leagueoflegends.com/cdn/14.5.1/data/en_US/champion.json"
+  );
+
+  const list = await response.json();
+  const championlist = Object.entries(list.data);
+
+  // console.log(list);
+  // console.log(championlist);
+
+  championlist.forEach((element) => {
+    const version = Object.values(element[1]);
+    const images = Object.values(version[7]);
+    console.log(images[0]);
+
+    const h1 = document.createElement("h1");
+    h1.innerText = element[0];
+
+    const desc = document.createElement("p");
+    desc.innerText = version[4];
+
+    const img = document.createElement("img");
+    img.innerText = images[0];
+
+    wrapper.append(h1);
+    wrapper.append(desc);
+    wrapper.append(img);
+  });
+} catch (error) {
+  console.log(error);
+  const diverreur = document.createElement("div");
+
+  diverreur.innerText = "Impossible de contacter le serveur";
+
+  wrapper.append(diverreur);
 }
-
-function createElementAvectext(tagName, text) {
-    const element = document.createElement(tagName)
-    element.innertext = text
-    return element
-}
-
-async function main() {
-    const conteneur = document.querySelector("#article")
-    console.log(conteneur);
-    try {
-        const r = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5", {
-            headers: {
-                Accept: "application/json",
-            },
-        });
-        if (r.ok !== true) {
-            throw new Error("y'a un problème");
-        }
-
-        const response = await r.json()
-        console.log(response);
-        for (let post of response) {
-            console.log(conteneur.append(createArticle(post)));
-            conteneur.append(createArticle(post))
-        }
-
-    } catch (error) {
-        console.log(error);
-    }
-
-
-
-}
-main()
