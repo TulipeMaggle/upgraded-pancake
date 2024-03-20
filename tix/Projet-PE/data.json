@@ -1,0 +1,12 @@
+{
+    "stagiaires": [
+        {
+            "name": "Yorik",
+            "presence": "false"
+        },
+        {
+            "name": "Feu",
+            "presence": "true"
+        }
+    ]
+}
