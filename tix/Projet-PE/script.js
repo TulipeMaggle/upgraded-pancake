@@ -1,7 +1,4 @@
-import http from 'node:http'
+import fs from 'node:fs/promises'
 
-const server = http.createServer((req, res) => {
-	res.end()
-})
-
-server.on()
+const content = await fs.readFile('yo.txt', { encoding: 'utf8' })
+console.log(content)
