@@ -1,3 +1,11 @@
+<?php
+require 'config.php';
+require 'functions.php';
+
+$creneaux = crenaux_html(CRENEAUX, JOURS);
+echo $creneaux;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,6 +20,7 @@
 		<label for="Stagiaire">
 			<input type="text" name="nom" placeholder="Entrez votre nom" />
 			<input type="submit" value="Envoyer" />
+
 		</label>
 	</form>
 </body>
