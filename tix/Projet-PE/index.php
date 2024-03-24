@@ -1,9 +1,11 @@
 <?php
+date_default_timezone_set('Europe/Paris');
+
 require 'config.php';
 require 'functions.php';
 
-$creneaux = crenaux_html(CRENEAUX, JOURS);
-echo $creneaux;
+$email = $_GET["email"]
+// $creneaux = crenaux_html(CRENEAUX, JOURS);
 ?>
 
 <!DOCTYPE html>
@@ -12,13 +14,28 @@ echo $creneaux;
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>test dqzdq</title>
+	<title>d</title>
 </head>
 
 <body>
-	<form action="Stagiaire">
-		<label for="Stagiaire">
-			<input type="text" name="nom" placeholder="Entrez votre nom" />
+	<form action="" method="get">
+		<label>
+			<pre>
+				<?php
+				if (!empty(($email)) && $email !== " ") {
+					try {
+						$ressource = fopen("emails.txt", "a");
+						$data = $email . " - " . date("j/n/Y H:i:s") . PHP_EOL;
+						fwrite($ressource, $data);
+					} catch (\Throwable $th) {
+						throw $th;
+					}
+					echo "Votre email a bien été enregistré ";
+				}
+				var_dump($_GET)
+				?>
+			</pre>
+			<input type="email" name="email" placeholder="votre@email.com" multiple />
 			<input type="submit" value="Envoyer" />
 
 		</label>
