@@ -2,10 +2,11 @@
 date_default_timezone_set('Europe/Paris');
 
 require 'config.php';
-require 'functions.php';
+require_once 'functions.php';
 
-$email = $_GET["email"]
 // $creneaux = crenaux_html(CRENEAUX, JOURS);
+
+ajouter_une_vue();
 ?>
 
 <!DOCTYPE html>
@@ -38,8 +39,12 @@ $email = $_GET["email"]
 			<input type="email" name="email" placeholder="votre@email.com" multiple />
 			<input type="submit" value="Envoyer" />
 
+
 		</label>
 	</form>
+	<footer>
+
+	</footer>
 </body>
 
 </html>

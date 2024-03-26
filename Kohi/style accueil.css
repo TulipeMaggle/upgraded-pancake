@@ -1,146 +1,147 @@
-*  {
-    font-family: sans-serif;
-    scrollbar-width: none;
+* {
+	font-family: sans-serif;
+	scrollbar-width: none;
 }
 
-body{
-    margin: 0;
+body {
+	margin: 0;
 }
 
 .sidebar {
-    opacity: 0;
-    position: relative;
-    left: 83vw;
-    bottom: 60vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.616), rgba(255, 255, 255, 0));
-    width: 15%;
-    height: 70vh;
-    transition-property: all 20s, 10s;
-    transition-property: all;
-    transition-duration: 0.8s;
+	opacity: 0;
+	position: relative;
+	left: 83vw;
+	bottom: 60vh;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0.616),
+		rgba(255, 255, 255, 0)
+	);
+	width: 15%;
+	height: 70vh;
+	transition-property: all 20s, 10s;
+	transition-property: all;
+	transition-duration: 0.8s;
 }
 
 .fond {
-    background-image: url(wallhaven-858lz1.png);
-    object-fit: cover;
-    padding-top: 20px;
-    height: 98vh;
+	background-image: url(wallhaven-858lz1.png);
+	object-fit: cover;
+	padding-top: 20px;
+	height: 98vh;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color: rgba(255, 255, 255, 0.507);
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius : 10px 10px / 5px 5px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	background-color: rgba(255, 255, 255, 0.507);
+	margin-left: 30px;
+	margin-right: 30px;
+	border-radius: 10px 10px / 5px 5px;
 }
 
 .header > a {
-    text-decoration: none;
-    font-size: large;
-    font-family: sans-serif;
-    color: black;
-    padding: 10px;
+	text-decoration: none;
+	font-size: large;
+	font-family: sans-serif;
+	color: black;
+	padding: 10px;
 }
 
 .header a:hover {
-    background-color: black;
-    color: white;
-    transition-property: all;
-    transition-duration: 0.8s;
+	background-color: black;
+	color: white;
+	transition-property: all;
+	transition-duration: 0.8s;
 }
 
-.main{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    transition-property: all;
-    transition-duration: 0.8s;
-
+.main {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	transition-property: all;
+	transition-duration: 0.8s;
 }
 
 .blogslist {
-    display: flex;
-    flex-direction: column;
-    width: 1222px;
-    overflow-y: scroll;
-    height: 550px;
-    scrollbar-width: none;
+	display: flex;
+	flex-direction: column;
+	width: 1222px;
+	overflow-y: scroll;
+	height: 550px;
+	scrollbar-width: none;
 }
 
 .blogslist div {
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.897);
+	margin: 10px;
+	background-color: rgba(255, 255, 255, 0.897);
 }
 
-.clicked{
-    background: linear-gradient(
-    to right,
-    blueviolet 30%,
-    orange ,
-    black 75% 80%,
-    green ,
-    white 
-  );
-    justify-content: left;
-    animation-name: glissement;
-    animation-duration: 2s;
+.clicked {
+	background: linear-gradient(
+		to right,
+		blueviolet 30%,
+		orange,
+		black 75% 80%,
+		green,
+		white
+	);
+	justify-content: left;
+	animation-name: glissement;
+	animation-duration: 2s;
 }
 
 @keyframes glissement {
-    from {
-        margin-left: 20%;
-    }
-  
-    to {
-      margin-left: 0%;
-    }
-  }
+	from {
+		margin-left: 20%;
+	}
 
-.clicked2{
-    background: linear-gradient(
-    to right,
-    blueviolet 30%,
-    orange ,
-    black 75% 80%,
-    green ,
-    white 
-  );
-  justify-content: left;
-    animation-name: glissement2;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+	to {
+		margin-left: 0%;
+	}
+}
+
+.clicked2 {
+	background: linear-gradient(
+		to right,
+		blueviolet 30%,
+		orange,
+		black 75% 80%,
+		green,
+		white
+	);
+	justify-content: left;
+	animation-name: glissement2;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes glissement2 {
-    from {
-        margin-left: 0%;
-    }
-  
-    to {
-      margin-left: 20%;
-    }
-  }
-  
+	from {
+		margin-left: 0%;
+	}
+
+	to {
+		margin-left: 20%;
+	}
+}
 
 .clickonsidebar {
-    opacity: 1;
-    transition-property: all;
-    transition-duration: 0.8s;
+	opacity: 1;
+	transition-property: all;
+	transition-duration: 0.8s;
 }
 
 #sidebar {
-    position: relative;
-    bottom: 60dvh;
-    left: 82dvw;
-    width: 10%;
-    font-size: 20px;
+	position: relative;
+	bottom: 60dvh;
+	left: 82dvw;
+	width: 10%;
+	font-size: 20px;
 }
 
-@media screen and (max-width:500px) {
-    #sidebar{
-        display: none;
-    }
+@media screen and (max-width: 500px) {
+	#sidebar {
+		display: none;
+	}
 }
